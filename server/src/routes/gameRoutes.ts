@@ -1,7 +1,7 @@
-import { Router } from 'express';
+import express from 'express';
 import { startGame } from '../controllers/gameController';
 
-const router = Router();
+const router = express.Router();
 
 router.post('/start-game', startGame);
 
